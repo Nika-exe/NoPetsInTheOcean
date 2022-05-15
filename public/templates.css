@@ -11,6 +11,9 @@ html {
 
 body {
   background-color: #faf4b6;
+  height: 100vh;
+}
+main {
   height: 100%;
 }
 
@@ -28,6 +31,7 @@ body {
 }
 
 .burguerFlex {
+  display: inline-block;
   width: 45px;
   height: 45px;
   border: 3px solid #daedee;
@@ -69,8 +73,36 @@ body {
     translate(-7px, -7px);
 }
 
+.desk-nav, .desk-social {
+  display: none;
+  list-style: none;
+}
+
+
+#beach-header .dropdown-menu {
+  background-color: #f7d256;
+  
+}
+
+#beach-header .dropdown-item {
+  color: #173657;
+  font-family: var(--Radio);
+}
+
+#beach-header .dropdown-item:hover {
+  background-color: #badadb;
+  font-family: var(--Radio);
+}
+
 #beach-header {
   background-image: url("../media/header576.png");
+  background-position: top ;
+  background-size: cover;
+  height: 100px;
+}
+
+#beach-footer {
+  background-image: url("../media/footer576.png");
   background-position: top ;
   background-size: cover;
   height: 100px;
@@ -81,6 +113,14 @@ body {
     background-image: url("../media/header768.png");
     height: 100px;
   }
+
+  .burguerFlex {
+    margin-right: 10px;
+  }
+}
+
+.desk-nav {
+  display: none;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -89,6 +129,47 @@ body {
     background-image: url("../media/header992.png");
     height: 150px;
   }
+  .burguerFlex {
+    display: none;
+  }
+  
+  .header-content {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 80%;
+  }
+  .header-content nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 80%;
+    width: 80%;
+  }
+  .desk-nav, .desk-social {
+    display: flex;
+  }
+  .desk-nav a, .desk-social a {
+    color: #daedee;
+    text-decoration: none;
+  }
+  .desk-nav a {
+    font-size: 1.2em;
+    font-style: var(--Radio);
+    font-weight: 600;
+  }
+  .desk-nav a:hover, .desk-social a:hover {
+    color: #f9c6b3;
+    font-style: var(--Radio);
+  }
+  .desk-nav {
+    align-self: center;
+    width: 60%;
+    justify-content: space-evenly;
+  }
+  .desk-social {
+    justify-content: space-evenly;
+    width: 30%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -96,6 +177,17 @@ body {
   #beach-header {
     background-image: url("../media/header1200.png");
     height: 150px;
+  }
+
+  .desk-nav a {
+    font-size: 1.5em;
+  }
+
+  .desk-nav {
+    width: 40%;
+  }
+  .desk-social {
+    width: 20%;
   }
 }
 
