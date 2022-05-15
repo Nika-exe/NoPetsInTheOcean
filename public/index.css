@@ -19,7 +19,31 @@ body {
   height: 100%;
 }
 
+.presentation {
+  position: relative;
+}
+.presentation-content {
+  background-color: rgba(255, 255, 255, 0.75);
+  font-family: var(--Radio);
+  border-radius: 20px;
+  position: absolute;
+  padding: 1em;
+  color: #173657;
+  height: fit-content;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 100px;
+  width: 95%;
+}
+.presentation-content h3 {
+  font-size: 1.2em;
+}
+.presentation-content p {
+  font-size: .9em;
+}
 .contenedor-video{
+  width: 100vw;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -27,17 +51,15 @@ body {
   width: 100%;
 }
 .beach-menu {
-  background-image: url("../media/beach1200.png");
+  background-image: url("../media/sandBanner576.png");
   background-position: top ;
   background-size: cover;
-  height: 150px;
+  height: 100px;
   position: sticky;
   top: 0px;
   width: 100%;
 }
-.relleno {
-  height: 2000px;
-}
+
 #index-header {
   position: fixed;
   width: 100%;
@@ -60,23 +82,32 @@ body {
 }
 
 #index-header {
-  background-image: url("../media/header576.png");
+  background-image: url("../media/indexHeader576.png");
   background-position: top ;
   background-size: cover;
   height: 100px;
 }
 
-#beach-footer {
-  background-image: url("../media/footer576.png");
-  background-position: top ;
-  background-size: cover;
-  height: 100px;
-}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #index-header {
-    background-image: url("../media/header768.png");
-    height: 100px;
+    background-image: url("../media/indexHeader768.png");
+    height: 120px;
+  }
+  .beach-menu {
+    background-image: url("../media/sandBanner768.png");
+    height: 120px;
+  }
+  .presentation-content {
+    padding: 1em;
+    top: 120px;
+    width: 90%;
+  }
+  .presentation-content h3 {
+    font-size: 1.5em;
+  }
+  .presentation-content p {
+    font-size: 1em;
   }
 }
 
@@ -84,10 +115,24 @@ body {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #index-header {
-    background-image: url("../media/header992.png");
-    height: 150px;
+    background-image: url("../media/indexHeader992.png");
+    height: 140px;
   }
-  
+  .beach-menu {
+    background-image: url("../media/sandBanner992.png");
+    height: 140px;
+  }
+  .presentation-content {
+    padding: 1.2em;
+    top: 160px;
+    max-width: 80%;
+  }
+  .presentation-content h3 {
+    font-size: 2em;
+  }
+  .presentation-content p {
+    font-size: 1.2em;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -96,22 +141,65 @@ body {
     background-image: url("../media/indexHeader1200.png");
     height: 150px;
   }
-
-  
+  .beach-menu {
+    background-image: url("../media/sandBanner1200.png");
+    height: 150px;
+  }
+  .presentation-content {
+    padding: 1.2em;
+    top: 180px;
+    max-width: 80%;
+  }
+  .presentation-content h3 {
+    font-size: 2em;
+  }
+  .presentation-content p {
+    font-size: 1.4em;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #index-header {
-    background-image: url("../media/header1400.png");
+    background-image: url("../media/indexHeader1400.png");
     height: 160px;
+  }
+  .beach-menu {
+    background-image: url("../media/sandBanner1400.png");
+    height: 180px;
+  }
+  .presentation-content {
+    padding: 2em;
+    top: 200px;
+    max-width: 60%;
+  }
+  .presentation-content h3 {
+    font-size: 2em;
+  }
+  .presentation-content p {
+    font-size: 1.4em;
   }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   #index-header {
-    background-image: url("../media/header1600.png");
+    background-image: url("../media/indexHeader1600.png");
     height: 200px;
+  }
+  .beach-menu {
+    background-image: url("../media/sandBanner1600.png");
+    height: 200px;
+  }
+  .presentation-content {
+    padding: 2em;
+    top: 240px;
+    max-width: 50%;
+  }
+  .presentation-content h3 {
+    font-size: 2.2em;
+  }
+  .presentation-content p {
+    font-size: 1.4em;
   }
 }
