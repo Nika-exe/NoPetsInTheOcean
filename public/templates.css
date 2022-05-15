@@ -23,12 +23,17 @@ main {
   flex-flow: row-reverse nowrap;
   justify-content: flex-end;
   height: 60%;
+  width: 100%;
 }
 
-.header-content h1 {
-  color: #f9c6b3;
-  font-family: var(--Lobster);
+.home-button {
+  width: 60%;
 }
+
+.home-button img {
+  width: 100%;
+}
+
 
 .burguerFlex {
   display: inline-block;
@@ -123,9 +128,7 @@ main {
   }
 }
 
-.desk-nav {
-  display: none;
-}
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -136,6 +139,9 @@ main {
   #beach-footer {
     background-image: url("../media/footer992.png");
     height: 150px;
+  }
+  .home-button {
+    width: 40%;
   }
   .burguerFlex {
     display: none;
@@ -151,7 +157,7 @@ main {
     flex-flow: row nowrap;
     justify-content: space-between;
     height: 80%;
-    width: 80%;
+    width: 60%;
   }
   .desk-nav, .desk-social {
     display: flex;
@@ -190,7 +196,13 @@ main {
     background-image: url("../media/footer1200.png");
     height: 150px;
   }
-
+  .home-button {
+    width: 35%;
+  }
+  .header-content nav {
+    
+    width: 65%;
+  }
   .desk-nav a {
     font-size: 1.5em;
   }
