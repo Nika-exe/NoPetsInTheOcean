@@ -18,3 +18,100 @@ body {
   background-color: #faf4b6;
   height: 100%;
 }
+
+.contenedor-video{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.contenedor-video video {
+  width: 100%;
+}
+.beach-menu {
+  background-image: url("../media/beach1200.png");
+  background-position: top ;
+  background-size: cover;
+  height: 150px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+.relleno {
+  height: 2000px;
+}
+#index-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#index-header .dropdown-menu {
+  background-color: #f7d256;
+  
+}
+
+#index-header .dropdown-item {
+  color: #173657;
+  font-family: var(--Radio);
+}
+
+#index-header .dropdown-item:hover {
+  background-color: #badadb;
+  font-family: var(--Radio);
+}
+
+#index-header {
+  background-image: url("../media/header576.png");
+  background-position: top ;
+  background-size: cover;
+  height: 100px;
+}
+
+#beach-footer {
+  background-image: url("../media/footer576.png");
+  background-position: top ;
+  background-size: cover;
+  height: 100px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #index-header {
+    background-image: url("../media/header768.png");
+    height: 100px;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #index-header {
+    background-image: url("../media/header992.png");
+    height: 150px;
+  }
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #index-header {
+    background-image: url("../media/indexHeader1200.png");
+    height: 150px;
+  }
+
+  
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #index-header {
+    background-image: url("../media/header1400.png");
+    height: 160px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  #index-header {
+    background-image: url("../media/header1600.png");
+    height: 200px;
+  }
+}
