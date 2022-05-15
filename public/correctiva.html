@@ -9,175 +9,226 @@
     <link rel="stylesheet" href="assets/css/cards.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Radio+Canada:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./templates.css" type="text/css">
 </head>
 <body>
-    <header id="header"></header>
-    <div class="container">
-        <div class="row align-content-center">
-            <div class="col-sm-8">
-                <h1>ORGANIZACIONES</h1>
-                <hr class="py-1">
+    <header id="beach-header">
+        <div class="container header-content">
+            <h1>No Pets In The Ocean</h1>
+            <nav>
+                <a class="burguerFlex" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                    <div class="burguer">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
+        
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Preventiva</a></li>
+                    <li><a class="dropdown-item" href="#">Correctiva</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://github.com/Nika-exe/NoPetsInTheOcean">GitHub</a></li>
+                </ul>
+        
+                <ul class="desk-nav">
+                    <li><a class="desk-button" href="preventiva.html">Preventiva</a></li>
+                    <li><a class="desk-button" href="correctiva.html">Correctiva</a></li>
+                </ul>
+        
+                <ul class="desk-social">
+                    <li>
+                        <a class="social-button" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="https://github.com/Nika-exe/NoPetsInTheOcean">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>                                   
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row align-content-center">
+                <div class="col-sm-8">
+                    <h1>ORGANIZACIONES</h1>
+                    <hr class="py-1">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container d-flex align-items-center justify-content-center flex-wrap">
-        <div class="box" data-bs-toggle="modal" data-bs-target="#modalForm" data-title="dar en adopción" data-form="formAdoption">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="assets/img/adopta.jpg" alt="Dar en adopción">
+        <div class="container d-flex align-items-center justify-content-center flex-wrap">
+            <div class="box" data-bs-toggle="modal" data-bs-target="#modalForm" data-title="dar en adopción" data-form="formAdoption">
+                <div class="body">
+                    <div class="imgContainer">
+                        <img src="assets/img/adopta.jpg" alt="Dar en adopción">
+                    </div>
+                    <div class="content d-flex flex-column align-items-center justify-content-center">
+                        <div>
+                            <h3 class="text-white fs-5">Da en adopción tu mascota</h3>
+                            <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Da en adopción tu mascota</h3>
-                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+            </div>
+            <div class="box" data-bs-toggle="modal" data-bs-target="#modalForm" data-title="aviso ciudadano" data-form="formComplaint">
+                <div class="body">
+                    <div class="imgContainer">
+                        <img src="assets/img/denuncia.jpg" alt="Aviso ciudadano">
+                    </div>
+                    <div class="content d-flex flex-column align-items-center justify-content-center">
+                        <div>
+                            <h3 class="text-white fs-5">Alerta sobre alguna denuncia que hayas observado</h3>
+                            <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="box" data-bs-toggle="modal" data-bs-target="#modalForm" data-title="aviso ciudadano" data-form="formComplaint">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="assets/img/denuncia.jpg" alt="Aviso ciudadano">
-                </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Alerta sobre alguna denuncia que hayas observado</h3>
-                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+        <div class="modal fade" id="modalForm" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Solicitud de <span id="titleForm"></span></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modalForm" data-bs-backdrop="static" data-bs-keyboard="false">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Solicitud de <span id="titleForm"></span></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="#" id="formAdoption" class="d-none">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4">
-                                <div class="form-floating">
-                                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre" required>
-                                    <label for="nombre">Nombre</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="form-floating">
-                                    <input type="email" name="correo" id="correo" class="form-control" placeholder="Correo" required>
-                                    <label for="correo">Correo</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="form-floating">
-                                    <input type="number" name="telefono" id="telefono" class="form-control" placeholder="Teléfono" required>
-                                    <label for="telefono">Teléfono</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" name="especie_mascota" id="especie_mascota" class="form-control" placeholder="Especie mascota" required>
-                                    <label for="especie_mascota">Especie mascota</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="form-floating">
-                                    <input type="date" class="form-control" name="fecha_registro" id="fecha_registro" placeholder="0000-00-00" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-sm-12">
-                                <div class="form-floating">
-                                    <textarea name="motivo" id="motivo" class="form-control" placeholder="Descripción del motivo de darlo en adopción" required></textarea>
-                                    <label for="motivo">Descripción del motivo de darlo en adopción</label>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" id="sendFormAdoption" class="d-none"></button>
-                    </form>
-                    <form action="#" id="formComplaint" class="d-none">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-floating">
-                                    <textarea name="descripcion_hecho" id="descripcion_hecho" class="form-control" placeholder="Descripción del hecho" required></textarea>
-                                    <label for="descripcion_hecho">Descripción del hecho</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="form-floating">
-                                    <input type="date" class="form-control" name="fecha_registro" id="fecha_registroC" placeholder="0000-00-00" required>
-                                </div>
-                            </div>
-                            <!--<div class="col-sm-12 col-md-4">
-                                <div class="form-floating">
-                                    <input type="text" name="etapa" id="etapa" class="form-control" placeholder="Etapa" required>
-                                    <label for="etapa">Etapa</label>
-                                </div>
-                            </div>-->
-                            <div class="col-sm-12 col-md-6">
-                                <div class="btn-group" role="group">
-                                    <input type="checkbox" name="es_anonimo" id="es_anonimo" class="btn-check" value="1" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="es_anonimo">¿Desea que le contactemos?</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="showDirection" class="d-none">
-                            <div class="row mt-3">
-                                <div class="col-sm-12 col-md-6">
+                    <div class="modal-body">
+                        <form action="#" id="formAdoption" class="d-none">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
                                     <div class="form-floating">
-                                        <input type="text" name="avenida" id="avenida" class="form-control optional" placeholder="Avenida">
-                                        <label for="avenida">Avenida</label>
+                                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre" required>
+                                        <label for="nombre">Nombre</label>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6">
+                                <div class="col-sm-12 col-md-4">
                                     <div class="form-floating">
-                                        <input type="text" name="ciudad" id="ciudad" class="form-control optional" placeholder="Ciudad">
-                                        <label for="ciudad">Ciudad</label>
+                                        <input type="email" name="correo" id="correo" class="form-control" placeholder="Correo" required>
+                                        <label for="correo">Correo</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="form-floating">
+                                        <input type="number" name="telefono" id="telefono" class="form-control" placeholder="Teléfono" required>
+                                        <label for="telefono">Teléfono</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" name="estado" id="estado" class="form-control optional" placeholder="Estado">
-                                        <label for="estado">Estado</label>
+                                        <input type="text" name="especie_mascota" id="especie_mascota" class="form-control" placeholder="Especie mascota" required>
+                                        <label for="especie_mascota">Especie mascota</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-floating">
-                                        <input type="number" name="cp" id="cp" class="form-control optional" placeholder="Código Postal">
-                                        <label for="cp">Código Postal</label>
+                                        <input type="date" class="form-control" name="fecha_registro" id="fecha_registro" placeholder="0000-00-00" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col-sm-12">
                                     <div class="form-floating">
-                                        <input type="text" name="referencia" id="referencia" class="form-control optional" placeholder="Referencia">
-                                        <label for="referencia">Referencia</label>
+                                        <textarea name="motivo" id="motivo" class="form-control" placeholder="Descripción del motivo de darlo en adopción" required></textarea>
+                                        <label for="motivo">Descripción del motivo de darlo en adopción</label>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <button type="submit" id="sendFormComplaint" class="d-none"></button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal"><i class="bi-x"></i> Cancelar</button>
-                    <button type="button" class="btn btn-success" id="send"><i class="bi-send-plus"></i> Enviar</button>
+                            <button type="submit" id="sendFormAdoption" class="d-none"></button>
+                        </form>
+                        <form action="#" id="formComplaint" class="d-none">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-floating">
+                                        <textarea name="descripcion_hecho" id="descripcion_hecho" class="form-control" placeholder="Descripción del hecho" required></textarea>
+                                        <label for="descripcion_hecho">Descripción del hecho</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" name="fecha_registro" id="fecha_registroC" placeholder="0000-00-00" required>
+                                    </div>
+                                </div>
+                                <!--<div class="col-sm-12 col-md-4">
+                                    <div class="form-floating">
+                                        <input type="text" name="etapa" id="etapa" class="form-control" placeholder="Etapa" required>
+                                        <label for="etapa">Etapa</label>
+                                    </div>
+                                </div>-->
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="btn-group" role="group">
+                                        <input type="checkbox" name="es_anonimo" id="es_anonimo" class="btn-check" value="1" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="es_anonimo">¿Desea que le contactemos?</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="showDirection" class="d-none">
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" name="avenida" id="avenida" class="form-control optional" placeholder="Avenida">
+                                            <label for="avenida">Avenida</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" name="ciudad" id="ciudad" class="form-control optional" placeholder="Ciudad">
+                                            <label for="ciudad">Ciudad</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" name="estado" id="estado" class="form-control optional" placeholder="Estado">
+                                            <label for="estado">Estado</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="number" name="cp" id="cp" class="form-control optional" placeholder="Código Postal">
+                                            <label for="cp">Código Postal</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-12">
+                                        <div class="form-floating">
+                                            <input type="text" name="referencia" id="referencia" class="form-control optional" placeholder="Referencia">
+                                            <label for="referencia">Referencia</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" id="sendFormComplaint" class="d-none"></button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal"><i class="bi-x"></i> Cancelar</button>
+                        <button type="button" class="btn btn-success" id="send"><i class="bi-send-plus"></i> Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer id="footer"></footer>
+    </main>
+    <footer id="beach-footer"></footer>
+    <script src="../src/templates.js"></script>
     <script src="../src/correctiva.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
