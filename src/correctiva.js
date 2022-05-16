@@ -37,7 +37,7 @@ formAdoption.addEventListener('submit', e => {
     const url = 'http://40.122.237.236:8080/FormularioAdopcion';
     const formData = new FormData(formAdoption);
     fetch(url, {
-        method: 'GET',
+        method: 'POST',
         cache: 'no-cache',
         headers: {
             'Content-Type': 'application/json'
@@ -67,7 +67,7 @@ formComplaint.addEventListener('submit', e => {
     const url = 'http://40.122.237.236:8080/FormularioDenuncia';
     const formData = new FormData(formComplaint);
     fetch(url, {
-        method: 'GET',
+        method: 'POST',
         cache: 'no-cache',
         headers: {
             'Content-Type': 'application/json'
@@ -81,9 +81,10 @@ formComplaint.addEventListener('submit', e => {
         throw new Error('Ocurrió un error al intentar almacenar la información. Por favor, inténtelo nuevamente más tarde.');
     }).then(data => {
         console.log(data);
+        Swal.fire('¡Éxito!', mTitle, 'error');
         btnSend.disabled = false;
     }).catch(e => {
-        Swal.fire('Error', mTitle , 'error');
+        Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
         btnSend.disabled = false;
     });
 });
