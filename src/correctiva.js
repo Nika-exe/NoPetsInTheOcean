@@ -34,8 +34,9 @@ formAdoption.addEventListener('submit', e => {
 
     };*/
     btnSend.disabled = true;
-    const url = 'http://40.122.237.236:8080/FormularioAdopcion';
     const formData = new FormData(formAdoption);
+    const queryString = new URLSearchParams(formData).toString()
+    const url = 'http://40.122.237.236:8080/FormularioAdopcion?' + queryString;
     fetch(url, {
         method: 'GET',
         cache: 'no-cache',
@@ -43,7 +44,7 @@ formAdoption.addEventListener('submit', e => {
             'Content-Type': 'application/json',
             'mode': 'no-cors'
         },
-        body: formData
+        // body: formData
     }).then(res => {
         console.log(res);
         if(res.ok) {
@@ -65,8 +66,9 @@ formComplaint.addEventListener('submit', e => {
 
     };*/
     btnSend.disabled = true;
-    const url = 'http://40.122.237.236:8080/FormularioDenuncia';
     const formData = new FormData(formComplaint);
+    const queryString = new URLSearchParams(formData).toString()
+    const url = 'http://40.122.237.236:8080/FormularioDenuncia?' + queryString;
     fetch(url, {
         method: 'GET',
         cache: 'no-cache',
@@ -74,7 +76,7 @@ formComplaint.addEventListener('submit', e => {
             'Content-Type': 'application/json',
             'mode': 'no-cors'
         },
-        body: formData
+        // body: formData
     }).then(res => {
         console.log(res);
         if(res.ok) {
