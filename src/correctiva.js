@@ -56,7 +56,7 @@ formAdoption.addEventListener('submit', e => {
         btnSend.disabled = false;
     }).catch(e => {
         // Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
-        Swal.fire('¡Éxito!', mTitle + ' almacenada correctamente.', 'success');
+        Swal.fire('¡Éxito!', 'Solicitud de ' + mTitle.textContent + ' almacenada correctamente.', 'success');
         btnSend.disabled = false;
     });
 });
@@ -90,7 +90,7 @@ formComplaint.addEventListener('submit', e => {
         btnSend.disabled = false;
     }).catch(e => {
         // Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
-        Swal.fire('¡Éxito!', mTitle + ' almacenada correctamente.', 'success');
+        Swal.fire('¡Éxito!', 'Solicitud de ' + mTitle.textContent + ' almacenada correctamente.', 'success');
         btnSend.disabled = false;
     });
 });
