@@ -37,10 +37,11 @@ formAdoption.addEventListener('submit', e => {
     const url = 'http://40.122.237.236:8080/FormularioAdopcion';
     const formData = new FormData(formAdoption);
     fetch(url, {
-        method: 'POST',
+        method: 'GET',
         cache: 'no-cache',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'mode': 'no-cors'
         },
         body: formData
     }).then(res => {
@@ -67,10 +68,11 @@ formComplaint.addEventListener('submit', e => {
     const url = 'http://40.122.237.236:8080/FormularioDenuncia';
     const formData = new FormData(formComplaint);
     fetch(url, {
-        method: 'POST',
+        method: 'GET',
         cache: 'no-cache',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'mode': 'no-cors'
         },
         body: formData
     }).then(res => {
