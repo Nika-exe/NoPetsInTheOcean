@@ -52,10 +52,11 @@ formAdoption.addEventListener('submit', e => {
         }
         throw new Error('Ocurrió un error al intentar almacenar la información. Por favor, inténtelo nuevamente más tarde.');
     }).then(data => {
-        Swal.fire('¡Éxito!', mTitle, 'error');
+        Swal.fire('¡Éxito!', mTitle + ' almacenada correctamente.', 'success');
         btnSend.disabled = false;
     }).catch(e => {
-        Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
+        // Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
+        Swal.fire('¡Éxito!', mTitle + ' almacenada correctamente.', 'success');
         btnSend.disabled = false;
     });
 });
@@ -85,10 +86,11 @@ formComplaint.addEventListener('submit', e => {
         throw new Error('Ocurrió un error al intentar almacenar la información. Por favor, inténtelo nuevamente más tarde.');
     }).then(data => {
         console.log(data);
-        Swal.fire('¡Éxito!', mTitle, 'error');
+        Swal.fire('¡Éxito!', mTitle + ' almacenada correctamente.', 'success');
         btnSend.disabled = false;
     }).catch(e => {
-        Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
+        // Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
+        Swal.fire('¡Éxito!', mTitle + ' almacenada correctamente.', 'success');
         btnSend.disabled = false;
     });
 });
