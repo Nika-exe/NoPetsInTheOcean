@@ -5,6 +5,14 @@ function crossLine() {
     this.classList.toggle("menu");
 }
 
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
 // let headerTag = document.getElementById('beach-header')
 // let footerTag = document.getElementById('beach-footer')
 

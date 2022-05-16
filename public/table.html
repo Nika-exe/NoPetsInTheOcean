@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>table</title>
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./templates.css">
 </head>
 
 <body>
@@ -241,6 +242,23 @@
         </div>
       </div>
 
+
+      <footer id="beach-footer">
+        <button class="open-button" onclick="openForm()">Chat</button>
+    
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+    
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+    
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </footer>
+<script src="../src/templates.js"></script>
 </body>
 </html>
 

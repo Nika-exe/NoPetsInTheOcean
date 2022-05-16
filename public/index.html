@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Radio+Canada:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./templates.css" type="text/css">
   <link rel="stylesheet" href="./index.css" type="text/css">
-  <title>Document</title>
+  <title>No Pets In The Ocean</title>
 
 </head>
 <body>
@@ -102,7 +102,21 @@
     
   </main>
 
-  <footer id="beach-footer"></footer>
+  <footer id="beach-footer">
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </footer>
 
   <script src="../src/index.js"></script>
   <script src="../src/templates.js"></script>
