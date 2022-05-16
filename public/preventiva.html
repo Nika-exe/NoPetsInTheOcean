@@ -245,22 +245,23 @@
       </div>
     </div>
   </main>
-  
+
   <footer id="beach-footer">
-    <button class="open-button" onclick="openForm()">Chat</button>
+      <button class="open-button" onclick="openForm()">Chat</button>
 
-    <div class="chat-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-        <h1>Chat</h1>
+      <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+              <h1>Chat</h1>
+              <div id="chat" style="background-color: white; box-shadow: 2px 2px grey;"></div>
+              <label for="msg"><b>Message</b></label>
+              <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
 
-        <label for="msg"><b>Message</b></label>
-        <textarea placeholder="Type message.." name="msg" required></textarea>
-
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
-    </div>
+              <button type="submit" class="btn">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+      </div>
   </footer>
+  <script src="../src/chat.js"></script>
 <script src="../src/templates.js"></script>
 </body>
 <script src="../src/templates.js"></script>
