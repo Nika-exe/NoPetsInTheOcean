@@ -34,7 +34,7 @@ formAdoption.addEventListener('submit', e => {
 
     };*/
     btnSend.disabled = true;
-    const url = '';
+    const url = 'http://40.122.237.236:8080/FormularioAdopcion';
     const formData = new FormData(formAdoption);
     fetch(url, {
         method: 'POST',
@@ -50,7 +50,7 @@ formAdoption.addEventListener('submit', e => {
         }
         throw new Error('Ocurrió un error al intentar almacenar la información. Por favor, inténtelo nuevamente más tarde.');
     }).then(data => {
-        console.log(data);
+        Swal.fire('¡Éxito!', mTitle, 'error');
         btnSend.disabled = false;
     }).catch(e => {
         Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
@@ -64,7 +64,7 @@ formComplaint.addEventListener('submit', e => {
 
     };*/
     btnSend.disabled = true;
-    const url = '';
+    const url = 'http://40.122.237.236:8080/FormularioDenuncia';
     const formData = new FormData(formComplaint);
     fetch(url, {
         method: 'POST',
@@ -83,7 +83,7 @@ formComplaint.addEventListener('submit', e => {
         console.log(data);
         btnSend.disabled = false;
     }).catch(e => {
-        Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
+        Swal.fire('Error', mTitle , 'error');
         btnSend.disabled = false;
     });
 });

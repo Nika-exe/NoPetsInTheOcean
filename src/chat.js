@@ -1,6 +1,6 @@
 (function (window, document, JSON) {
     'use strict';
-    let url = 'ws://' + window.location.host + '/chat_war/chat',
+    let url = 'ws://40.122.237.236:8080/chat',
         ws = new WebSocket(url),
         chat = document.getElementById('chat'),
         btn = document.getElementById('btnSend'),
