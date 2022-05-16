@@ -15,7 +15,8 @@
         chat.innerHTML += `<br>Nombre: ${data.nombre} dice: ${data.mensaje}`
     };
 
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
         let msg = {
             nombre: nombre.value,
             mensaje: mensaje.value
