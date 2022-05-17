@@ -4,6 +4,7 @@ const esAnonimo = document.getElementById('es_anonimo');
 const showDirection = document.getElementById('showDirection');
 const formAdoption = document.getElementById('formAdoption');
 const formComplaint = document.getElementById('formComplaint');
+const btnClose = document.getElementById('modalClose');
 const btnSend = document.getElementById('send');
 const optionalElems = document.getElementsByClassName('optional');
 let currentForm;
@@ -20,7 +21,9 @@ mForm.addEventListener('show.bs.modal', e => {
 
 mForm.addEventListener('hidden.bs.modal', _ => {
     formAdoption.classList.add('d-none');
+    formAdoption.reset();
     formComplaint.classList.add('d-none');
+    formComplaint.reset();
 });
 
 btnSend.addEventListener('click', e => {
@@ -52,11 +55,11 @@ formAdoption.addEventListener('submit', e => {
         }
         throw new Error('Ocurrió un error al intentar almacenar la información. Por favor, inténtelo nuevamente más tarde.');
     }).then(data => {
-        Swal.fire('¡Éxito!', mTitle + ' almacenada correctamente.', 'success');
+        console.log(data);
+        Swal.fire('¡Éxito!', mTitle + ' almacenada correctamente.', 'success').then( () => btnClose.click());
         btnSend.disabled = false;
     }).catch(e => {
-        // Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
-        Swal.fire('¡Éxito!', 'Solicitud de ' + mTitle.textContent + ' almacenada correctamente.', 'success');
+        Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
         btnSend.disabled = false;
     });
 });
@@ -86,11 +89,10 @@ formComplaint.addEventListener('submit', e => {
         throw new Error('Ocurrió un error al intentar almacenar la información. Por favor, inténtelo nuevamente más tarde.');
     }).then(data => {
         console.log(data);
-        Swal.fire('¡Éxito!', mTitle + ' almacenada correctamente.', 'success');
+        Swal.fire('¡Éxito!', mTitle + ' almacenada correctamente.', 'success').then( () => btnClose.click());
         btnSend.disabled = false;
     }).catch(e => {
-        // Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
-        Swal.fire('¡Éxito!', 'Solicitud de ' + mTitle.textContent + ' almacenada correctamente.', 'success');
+        Swal.fire('Error', 'Ocurrió el siguiente error:\n' + e.message, 'error');
         btnSend.disabled = false;
     });
 });
