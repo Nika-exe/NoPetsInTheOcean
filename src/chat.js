@@ -5,7 +5,7 @@
         chat = document.getElementById('chat'),
         btn = document.getElementById('btnSend'),
         nombre = document.getElementById('nombre'),
-        mensaje = document.getElementById('mensaje');
+        mensaje = document.getElementById('msg');
 
     ws.onopen = () => console.log('conectado...');
     ws.onclose = () => console.log('desconectado...');
