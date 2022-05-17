@@ -65,7 +65,7 @@
   <main>
     <section class="presentation">
       <div class="contenedor-video">
-        <video autoplay loop poster="img/bg-talleres.jpg">
+        <video autoplay loop poster="../media/fishCircleImg.png">
           <source src="../media/fishCircle.mp4" type="video/mp4">
         </video>
       </div>
@@ -112,8 +112,8 @@
         <label for="nombre"><b>Nombre</b></label>
         <input type="text" name="nombre" id="nombre">
         <label for="msg"><b>Message</b></label>
-        <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
-
+        <textarea name="msg" id="msg" required></textarea>
+        <input placeholder="Escriba una mensaje" type="text" class="input-message">
         <button type="submit" class="btn" id="btnSend">Send</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
