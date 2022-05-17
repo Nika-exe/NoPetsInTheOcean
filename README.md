@@ -34,4 +34,4 @@ El [despliegue](http://40.122.237.236/NoPetsInTheOcean/public/) se realizó a tr
 ### Update
 
 Lamentablemente se acabó el crédito gratuito de Azure :c
-![Quota exceeded](WhatsApp Image 2022-05-17 at 11.31.24 AM.jpeg)
+![Quota exceeded](https://github.com/Nika-exe/NoPetsInTheOcean/blob/main/WhatsApp%20Image%202022-05-17%20at%2011.31.24%20AM.jpeg)
