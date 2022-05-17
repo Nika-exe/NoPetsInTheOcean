@@ -51,7 +51,7 @@ body {
   width: 100%;
 }
 .beach-menu {
-  background-image: url("public/assets/img/sandBanner576.png");
+  background-image: url("../img/sandBanner576.png");
   background-position: top ;
   background-size: cover;
   height: 100px;
@@ -82,7 +82,7 @@ body {
 }
 
 #index-header {
-  background-image: url("public/assets/img/indexHeader576.png");
+  background-image: url("../img/indexHeader576.png");
   background-position: top ;
   background-size: cover;
   height: 100px;
@@ -91,11 +91,11 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #index-header {
-    background-image: url("public/assets/img/indexHeader768.png");
+    background-image: url("../img/indexHeader768.png");
     height: 120px;
   }
   .beach-menu {
-    background-image: url("public/assets/img/sandBanner768.png");
+    background-image: url("../img/sandBanner768.png");
     height: 120px;
   }
   .presentation-content {
@@ -115,11 +115,11 @@ body {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #index-header {
-    background-image: url("public/assets/img/indexHeader992.png");
+    background-image: url("../img/indexHeader992.png");
     height: 140px;
   }
   .beach-menu {
-    background-image: url("public/assets/img/sandBanner992.png");
+    background-image: url("../img/sandBanner992.png");
     height: 140px;
   }
   .presentation-content {
@@ -138,11 +138,11 @@ body {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #index-header {
-    background-image: url("public/assets/img/indexHeader1200.png");
+    background-image: url("../img/indexHeader1200.png");
     height: 150px;
   }
   .beach-menu {
-    background-image: url("public/assets/img/sandBanner1200.png");
+    background-image: url("../img/sandBanner1200.png");
     height: 150px;
   }
   .presentation-content {
@@ -161,11 +161,11 @@ body {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #index-header {
-    background-image: url("public/assets/img/indexHeader1400.png");
+    background-image: url("../img/indexHeader1400.png");
     height: 160px;
   }
   .beach-menu {
-    background-image: url("public/assets/img/sandBanner1400.png");
+    background-image: url("../img/sandBanner1400.png");
     height: 180px;
   }
   .presentation-content {
@@ -184,11 +184,11 @@ body {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   #index-header {
-    background-image: url("public/assets/img/indexHeader1600.png");
+    background-image: url("../img/indexHeader1600.png");
     height: 200px;
   }
   .beach-menu {
-    background-image: url("public/assets/img/sandBanner1600.png");
+    background-image: url("../img/sandBanner1600.png");
     height: 200px;
   }
   .presentation-content {
@@ -213,7 +213,7 @@ body {
   height: auto;
 }
 .contador::before{
-  background-image: url(public/assets/img/seaPokemon.png);
+  background-image: url(../img/seaPokemon.png);
   content: '';
 }
 .parallax::before{

@@ -100,14 +100,14 @@ main {
 }
 
 #beach-header {
-  background-image: url("public/assets/img/header576.png");
+  background-image: url("../img/header576.png");
   background-position: top ;
   background-size: cover;
   height: 100px;
 }
 
 #beach-footer {
-  background-image: url("public/assets/img/footer576.png");
+  background-image: url("../img/footer576.png");
   background-position: top ;
   background-size: cover;
   height: 100px;
@@ -115,11 +115,11 @@ main {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #beach-header {
-    background-image: url("public/assets/img/header768.png");
+    background-image: url("../img/header768.png");
     height: 120px;
   }
   #beach-footer {
-    background-image: url("public/assets/img/footer768.png");
+    background-image: url("../img/footer768.png");
     height: 100px;
   }
 
@@ -133,11 +133,11 @@ main {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #beach-header {
-    background-image: url("public/assets/img/header992.png");
+    background-image: url("../img/header992.png");
     height: 140px;
   }
   #beach-footer {
-    background-image: url("public/assets/img/footer992.png");
+    background-image: url("../img/footer992.png");
     height: 150px;
   }
   .home-button {
@@ -189,11 +189,11 @@ main {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #beach-header {
-    background-image: url("public/assets/img/header1200.png");
+    background-image: url("../img/header1200.png");
     height: 150px;
   }
   #beach-footer {
-    background-image: url("public/assets/img/footer1200.png");
+    background-image: url("../img/footer1200.png");
     height: 150px;
   }
   .home-button {
@@ -218,11 +218,11 @@ main {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #beach-header {
-    background-image: url("public/assets/img/header1400.png");
+    background-image: url("../img/header1400.png");
     height: 160px;
   }
   #beach-footer {
-    background-image: url("public/assets/img/footer768.png");
+    background-image: url("../img/footer768.png");
     height: 160px;
   }
 }
@@ -230,11 +230,11 @@ main {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   #beach-header {
-    background-image: url("public/assets/img/Header1600.png");
+    background-image: url("../img/Header1600.png");
     height: 200px;
   }
   #beach-footer {
-    background-image: url("public/assets/img/footer768.png");
+    background-image: url("../img/footer768.png");
     height: 200px;
   }
 }

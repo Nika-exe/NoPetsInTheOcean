@@ -30,13 +30,13 @@ body{
 .wave{
     height: 100%;
     width: 100%;
-    background-image: url(./image/fish.jpg);
+    background-image: url(../img/fish.jpg);
     
 }
 
 .riesgossec{
     /* color: white; */
-    background-image: url(./images/fish.jpg);
+    background-image: url(../img/fish.jpg);
 
 
 }
