@@ -30,3 +30,8 @@ Para esta solución hicimos uso de las siguientes tecnologías:
 ### Despliegue
 
 El [despliegue](http://40.122.237.236/NoPetsInTheOcean/public/) se realizó a través de una máquina virtual en Azure.
+
+### Update
+
+Lamentablemente se acabó el crédito gratuito de Azure :c
+![Quota exceeded](WhatsApp Image 2022-05-17 at 11.31.24 AM.jpeg)
