@@ -44,8 +44,7 @@ formAdoption.addEventListener('submit', e => {
         method: 'GET',
         cache: 'no-cache',
         headers: {
-            'Content-Type': 'application/json',
-            'mode': 'no-cors'
+            'Content-Type': 'application/json'
         },
         // body: formData
     }).then(res => {
@@ -77,8 +76,7 @@ formComplaint.addEventListener('submit', e => {
         method: 'GET',
         cache: 'no-cache',
         headers: {
-            'Content-Type': 'application/json',
-            'mode': 'no-cors'
+            'Content-Type': 'application/json'
         },
         // body: formData
     }).then(res => {
