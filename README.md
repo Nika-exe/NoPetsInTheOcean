@@ -29,7 +29,7 @@ Para esta solución hicimos uso de las siguientes tecnologías:
 
 ### Despliegue
 
-El [despliegue](http://40.122.237.236/NoPetsInTheOcean/public/) se realizó a través de una máquina virtual en Azure.
+El [despliegue](http://40.122.237.236/NoPetsInTheOcean/public/) se realizó a través de una máquina virtual en Azure. <br>
 Debido a que se acabó el saldo de la cuenta, se realizó un segundo [Despliegue](http://20.248.206.160/NoPetsInTheOcean/public/) a ls 21:34hrs del 18 de Mayo
 
 ### Update
